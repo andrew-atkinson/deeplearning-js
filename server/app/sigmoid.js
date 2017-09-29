@@ -1,5 +1,7 @@
 const math = require('mathjs')
 
-module.exports = function (matrix) {
-  return matrix.map(value => 1 / (1 * math.exp(-value)))
+module.exports = function (x) {
+  return (typeof x === 'number') 
+    ? 1 / (1 * math.exp(-x)) 
+    : x.map(value => 1 / (1 * math.exp(-value)))
 }
