@@ -1,0 +1,30 @@
+{
+  "name": "machine-learning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/index.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.0",
+    "mathjs": "^3.16.3",
+    "mongodb": "^2.2.31",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrew-atkinson/machine-learning-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrew-atkinson/machine-learning-js/issues"
+  },
+  "homepage": "https://github.com/andrew-atkinson/machine-learning-js#readme"
+}
