@@ -1,4 +1,4 @@
-const {index, range, clone} = require('mathjs')
+const {index, range} = require('mathjs')
 const math = require('mathjs')
 const numRows = require('./numRows')
 const numColumns = require('./numColumns')
