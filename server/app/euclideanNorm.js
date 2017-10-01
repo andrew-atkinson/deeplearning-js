@@ -5,6 +5,6 @@ module.exports = function (row) {
   if (row.size()[0] >= 1) 
     row.forEach(value => total += value * value)
   else 
-    total = row
+    total = row * row
   return Math.sqrt(total)
 }
