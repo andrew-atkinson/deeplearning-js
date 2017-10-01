@@ -5,6 +5,6 @@ const {reshape, size} = require('mathjs')
  * @param {matrix} image takes a 3D matrix
  * @returns a 1d vector
  */
-module.exports = function (image, arse, bottom) {
+module.exports = function (image) {
   return reshape(image, [image.size()[0] * image.size()[1] * image.size()[2]])
 }
