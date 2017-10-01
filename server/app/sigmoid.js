@@ -8,6 +8,6 @@ const math = require('mathjs')
  */
 module.exports = function (input) {
   return (typeof input === 'number') 
-    ? 1 / (1 * math.exp(-input)) 
-    : input.map(value => 1 / (1 * math.exp(-value)))
+    ? 1 / (1 + math.exp(-input)) 
+    : input.map(value => 1 / (1 + math.exp(-value)))
 }
