@@ -4,12 +4,10 @@ const sigmoid = require('./sigmoid')
 /**
  * calcs the derivative of the sigmoid
  * mathjs has to map over the matrix
- * @param {number, matrix} x 
+ * @param {number, matrix} x
  * @returns same type
  */
-module.exports = function(x){
-  return x.map(value => {
-    let s = sigmoid(value)
-    return s * (1 - s)
-  })
-}
+module.exports = x => x.map(value => {
+  let s = sigmoid(value)
+  return s * (1 - s)
+})

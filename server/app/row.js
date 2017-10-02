@@ -1,8 +1,5 @@
 const {index, range} = require('mathjs')
 
-module.exports = function (matrix, row) {
-  if (matrix.size()[0] < 1) 
-    return // edge cases?
-  else 
-    return matrix.index([row])
-}
+module.exports = (matrix, row) => (matrix.size()[0] < 1)
+                                    ? 0
+                                    : matrix.index([row])
