@@ -1,10 +1,10 @@
-const {exp, sum, index, range} = require('mathjs')
+const {index, range} = require('mathjs')
+const math = require('mathjs')
 const numRows = require('./numRows')
-const row = require('./row')
 const numColumns = require('./numColumns')
+const euclidNorm = require('./euclideanNorm')
 const normalizeByRow = require('./normalizeByRow')
 
 module.exports = matrix => {
-  matrix = matrix.map(value => exp(value))
-  return normalizeByRow(matrix, sum)
+  return normalizeByRow(matrix, euclidNorm)
 }
