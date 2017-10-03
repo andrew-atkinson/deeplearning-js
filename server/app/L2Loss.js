@@ -1,7 +1,7 @@
 const {matrix, dot, subtract} = require('mathjs')
 
 /**
- * 
+ * calculates the dot product of yhat-y (truth - prediction)
  * 
  * @param {Vector} yhat - takes a vector or array, not a matrix
  * @param {Vector} y - takes a vector or array, not a matrix

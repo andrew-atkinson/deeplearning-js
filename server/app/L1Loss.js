@@ -5,5 +5,6 @@ const {subtract, sum, abs} = require('mathjs')
  * 
  * @param {vector} yhat 
  * @param {vector} y 
+ * @returns {number}
  */
 module.exports = (yhat, y) => sum(abs(subtract(y,yhat)))
