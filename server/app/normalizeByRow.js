@@ -2,6 +2,13 @@ const {subset, index, range} = require('mathjs')
 const numRows = require('./numRows')
 const numColumns = require('./numColumns')
 
+/**
+ * takes a matrix and returns a matrix normalized by row
+ * 
+ * @param {Matrix} matrix 
+ * @param {function} rowFunc a function that determines the type of normalizing
+ * @returns {Matrix}
+ */
 module.exports = (matrix, rowFunc) => {
   let rows = numRows(matrix),
     columns = numColumns(matrix)
