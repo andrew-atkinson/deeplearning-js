@@ -4,6 +4,10 @@ const numRows = require('./numRows')
 const numColumns = require('./numColumns')
 const {Access} = require('hdf5/lib/globals')
 
+/**
+ * turns the hdf5 dataset into matrices
+ * @returns {Array} array of matrices, to be destructered oby the importing function
+ */
 export default () => {
     const train_dataset = new hdf5.File('datasets/train_catvnoncat.h5', Access.ACC_RDONLY)
     let train_set_x_orig = matrix(train_dataset["train_set_x"].slice()) 
