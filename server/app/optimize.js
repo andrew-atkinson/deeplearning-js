@@ -12,9 +12,10 @@
                      grads-- dictionary containing the gradients of the weights and bias with respect to the cost function,
                      costs-- list of all the costs computed during the optimization]
  */
-module.exports = (w, b, X, Y, num_iterations, learning_rate, print_cost = False) {
+module.exports = (w, b, X, Y, num_iterations, learning_rate, print_cost = False) => {
   let grads,
-      cost;
+    cost,
+    costs = [];
 
   for (var i = 0; i < num_iterations; i++) {
     [grads, cost] = propagate(w, b, X, Y)
@@ -26,7 +27,7 @@ module.exports = (w, b, X, Y, num_iterations, learning_rate, print_cost = False)
     b = -learning_rate * db
 
     if (i % 100 == 0) 
-      costs.append(cost)
+      costs.push(cost)
     if (print_cost && i % 100 == 0) 
       console.log("Cost after iteration", i, cost)
   }
