@@ -9,7 +9,7 @@ const {
   subset,
   index
 } = require('mathjs')
-const sigmoid = require('./sigmoid')
+const logistic = require('./logistic')
 
 /**
  * propagation function forwards and backwards, learns the parameters
@@ -22,7 +22,7 @@ const sigmoid = require('./sigmoid')
  */
 module.exports = (w, b, X, Y) => {
   const m = size(X)[1]
-  const A = w.map((_, i, matrix) => sigmoid(dot(transpose(w).subset(index(i)), X.subset(index(i))) + b))
+  const A = w.map((_, i, matrix) => logistic(w, X, b))
 
   let cost = -1 / m * sum(cost.map((_, i, matrix) => Y[i] * Math.log(A[i]) + (1 - Y[i]) * Math.log(1 - A[i]))) //note Math.log is JS native for the log of euler
 
