@@ -1,7 +1,7 @@
 const math = require('mathjs')
 
 /**
- * @param {Matrix} row 
+ * @param {Matrix} row
  * @returns {number} the euclidean norm of the row
  */
 module.exports = row => {

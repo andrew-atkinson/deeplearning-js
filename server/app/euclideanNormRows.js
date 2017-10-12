@@ -7,7 +7,7 @@ const normalizeByRow = require('./normalizeByRow')
 
 /**
  * take a matrix and returns a matrix with normalised rows
- * @param {Matrix} matrix 
+ * @param {Matrix} matrix
  * @returns {Matrix}
  */
 module.exports = matrix => {
