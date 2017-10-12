@@ -1,13 +1,10 @@
 const {
-  clone,
   size,
   dot,
   sum,
   map,
   squeeze,
   transpose,
-  subset,
-  index
 } = require('mathjs')
 const logistic = require('./logistic')
 

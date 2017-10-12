@@ -2,8 +2,6 @@ const {
   map,
   reshape,
   zeros,
-  dot,
-  transpose,
   size,
   subset,
   index
