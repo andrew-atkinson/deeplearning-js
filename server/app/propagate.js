@@ -23,7 +23,7 @@ module.exports = (w, b, X, Y) => {
   const A = sigmoid(dot(transpose(w), X) + b)
 
   let cost = clone(Y)
-  cost = -1 / m * sum(map(cost, () => Y * Math.log(A) + (1 - Y) * Math.log(1 - A)))
+  cost = -1 / m * sum(map(cost, (_, i) => Y * Math.log(A[i]) + (1 - Y[i]) * Math.log(1 - A[i]))) //note Math.log is JS native for the log of euler
 
   let dw = dot(X, transpose(A - Y)) / m
   let db = sum(A - Y) / m
