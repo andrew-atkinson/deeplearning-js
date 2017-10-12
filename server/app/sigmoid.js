@@ -1,10 +1,10 @@
 const math = require('mathjs')
 
 /**
- * basic sigmoid function
+ * basic sigmoid function, takes a number or mathjs matrix
  *
  * @param {any} input takes a number or matrix object
- * @returns the same type as inputed
+ * @returns {any} the same type as inputed either number or matrix
  */
 module.exports = input => (typeof input === 'number')
   ? 1 / (1 + math.exp(-input))
