@@ -19,7 +19,7 @@ const logistic = require('./logisticFunc')
 module.exports = (w, b, X) => {
   const m = size(X)[1]
   let Yprediction = zeros((1, X.shape[0]))
-  reshape(w, [X.shape[0], 1])
+  w = reshape(w, [X.shape[0], 1])
 
   const A = w.forEach((_,i, matrix) => logistic(w, X, b))
 
