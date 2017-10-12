@@ -21,7 +21,7 @@ module.exports = (w, b, X, Y) => {
   const m = size(X)[1]
   const A = w.map((_, i, matrix) => logistic(w, X, b))
 
-  let cost = -1 / m * sum(cost.map((_, i, matrix) => Y[i] * Math.log(A[i]) + (1 - Y[i]) * Math.log(1 - A[i]))) //note Math.log is JS native for the log of euler
+  let cost = -1 / m * sum(Y.forEach((_, i, matrix) => Y[i] * Math.log(A[i]) + (1 - Y[i]) * Math.log(1 - A[i]))) //note Math.log is JS native for the log of euler
 
   let dw = dot(X, transpose(A - Y)) / m
   let db = sum(A - Y) / m

@@ -21,7 +21,7 @@ module.exports = (w, b, X) => {
   let Yprediction = zeros((1, X.shape[0]))
   reshape(w, [X.shape[0], 1])
 
-  const A = w.map((_,i, matrix) => logistic(w, X, b))
+  const A = w.forEach((_,i, matrix) => logistic(w, X, b))
 
   for (var i = 0; i < size(A)[1]; i++) Yprediction.subset(index(i), A.subset(index(i)) > 0.5 ? 1 : 0)
 
