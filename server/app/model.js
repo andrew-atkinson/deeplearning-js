@@ -6,10 +6,10 @@ const initializeWithZeros = require('./initializeWithZeros')
 /**
  * combines initializeWithZeros, predict, propagate, optimize to predict
  * 
- * @param {any} Xtrain 
- * @param {any} Ytrain 
- * @param {any} Xtest 
- * @param {any} Ytest 
+ * @param {any} Xtrain training set - (px * px * 3 channels, mtrain examples)
+ * @param {any} Ytrain training labels (1, mtrain examples), 1 or 0
+ * @param {any} Xtest testing set - (px * px * 3 channels, mtrain examples)
+ * @param {any} Ytest testing labels (1, mtrain examples), 1 or 0
  * @param {number} [numIterations=2000] 
  * @param {number} [learningRate=0.5] 
  * @param {any} [printCost=False] 
