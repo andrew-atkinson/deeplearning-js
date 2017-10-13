@@ -4,7 +4,8 @@ const {
   zeros,
   size,
   subset,
-  index
+  index,
+  shape
 } = require('mathjs')
 const logistic = require('./logisticFunc')
 

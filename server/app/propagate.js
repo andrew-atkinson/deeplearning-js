@@ -4,7 +4,7 @@ const {
   sum,
   map,
   squeeze,
-  transpose,
+  transpose
 } = require('mathjs')
 const logistic = require('./logistic')
 
@@ -30,6 +30,5 @@ module.exports = (w, b, X, Y) => {
     dw,
     db
   }
-
   return [gradients, squeeze(cost)]
 }
