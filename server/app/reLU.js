@@ -1,7 +1,7 @@
 const math = require('mathjs')
 
 /**
- * basic rectified Linear Unit function, takes a number or mathjs matrix
+ * rectified Linear Unit function, takes a number or mathjs matrix
  *
  * @param {any} input takes a number or matrix object
  * @returns {any} the same type as inputed either number or matrix
