@@ -1,3 +1,5 @@
+const math = require('mathjs')
+
 /**
  * leaky rectified Linear Unit function, takes a number or mathjs matrix
  *
