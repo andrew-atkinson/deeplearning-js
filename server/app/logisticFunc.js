@@ -1,6 +1,5 @@
-const {dot, transpose, subset, index} = require('mathjs')
+const {dot, transpose, subset, index, tanh} = require('mathjs')
 const sigmoid = require('./sigmoid')
-const tanh = Math.tanh
 const reLU = require('./reLU')
 const leakyReLU = require('./leakyReLU')
 
