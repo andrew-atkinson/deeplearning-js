@@ -1,12 +1,12 @@
 const {dot, transpose, subset, index} = require('mathjs')
 const sigmoid = require('./sigmoid')
-const tanh = require('./tanh')
+const tanh = Math.tanh
 const reLU = require('./reLU')
 const leakyReLU = require('./leakyReLU')
 
 
 /**
- * performs for the logistic function
+ * logistic function
  * 
  * @param {Matrix} w Weights
  * @param {Matrix} X An array of examples
