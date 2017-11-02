@@ -6,7 +6,7 @@ const {
   squeeze,
   transpose
 } = require('mathjs')
-const logistic = require('./logistic')
+const logistic = require('./logisticFunc')
 
 /**
  * propagation function forwards and backwards, learns the parameters
