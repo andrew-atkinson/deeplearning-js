@@ -1,4 +1,4 @@
-const {zero, random} = require('mathjs') ///// put the various funcs in: random matrices, zero'd matrices
+const {zero, random} = require('mathjs')
 
 /**
  * initializes the weights with matrices of random numbers and the biases with matrices with zeros
